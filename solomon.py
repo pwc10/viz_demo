@@ -32,6 +32,7 @@ bins = [18, 25, 35, 45, 55, 65, 75]
 
 # Create a simple dashboard using Dash
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children='Clinical Trial Dashboard'),
